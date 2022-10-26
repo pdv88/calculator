@@ -1,0 +1,94 @@
+body {
+    display: grid;
+    align-content: center;
+    font-family: sans-serif;
+    height: 100vh;
+    max-width: 400px;
+    margin: auto;
+}
+
+p {
+    text-align: right;
+    margin: 10px 40px;
+    color: rgb(90, 90, 90);
+    font-weight: bold;
+    font-family:'Courier New', Courier, monospace;
+    overflow:hidden;
+    direction: rtl;
+    max-width: 250px;
+}
+
+.input {
+    font-size: 40px;
+}
+
+.operation {
+    font-size: 20px;
+    font-style: italic;
+}
+
+.display {
+    display: grid;
+    background-color: white;
+    border: 0px solid white;
+    border-radius: 50px;
+    margin-bottom: 20px; 
+    padding: 20;   
+    justify-content: right;
+}
+
+
+.calculator {
+    grid-template-rows: 1fr min-content;
+    align-content: space-between;
+    background-color: rgb(154, 170, 166);
+    padding: 30px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 20px #7e7e7e;
+}
+
+.dltClrBtns {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    gap: 5px;
+    margin-bottom: 15px;
+    justify-content: center;
+}
+
+.oprBtns {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(4, auto);
+    align-content: space-between;
+    gap: 5px;
+    
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button:active {
+    opacity: 0.5;
+    outline: none;
+    -webkit-box-shadow: inset 0px 0px 5px #7e7e7e;
+       -moz-box-shadow: inset 0px 0px 5px #7e7e7e;
+            box-shadow: inset 0px 0px 5px #7e7e7e;
+  }
+
+button {
+    border-radius: 45px;
+    height: 80px;
+    font-size: 30px;
+    font-weight: bold;
+    border: 0;
+    color: rgb(90, 90, 90);
+}
+
+.delete {
+    background-color: rgb(233, 171, 55);
+}
+
+.clear {
+    background-color: rgb(148, 202, 202);
+}
