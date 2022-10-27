@@ -50,6 +50,13 @@ equal.addEventListener("click", function(){
     }
 })
 
+decimal.addEventListener("click", function(){
+    if(!currentVal.includes(".")){
+        currentVal += "."
+        currentDisplay.textContent = currentVal
+    }
+})
+
 function handleNumber(number){
     currentVal += number
 }
